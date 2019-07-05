@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './fontawesome/css/fontawesome.min.css'
 import './App.css';
+import './components/Footer.css';
+import Contacts from './components/Contacts'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-function App() {
+import { Provider } from './context'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Provider>
+      <div className="App">
+        <Header branding="React Video Tutorial" />
+        <br />
+        <div className="container">
+          <Contacts />
+
+        </div>
+        <Footer />
+      </div>
+    </Provider>
+
   );
 }
 
