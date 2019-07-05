@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import '../fontawesome/css/fontawesome.min.css'
 import PropTypes from 'prop-types';
-import { Consumer } from '../context'
+import { Consumer } from '../../context'
 class Contact extends Component {
     state = { showcontactInfo: false }
     onDeleteClick = (id, dispatch) => {

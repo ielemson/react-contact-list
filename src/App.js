@@ -1,11 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './fontawesome/css/fontawesome.min.css'
-import './App.css';
-import './components/Footer.css';
-import Contacts from './components/Contacts'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import './components/styles/App.css';
+import './components/styles/Footer.css'
+import Contacts from './components/contacts/Contacts'
+import Header from './components/layouts/Header'
+import Footer from './components/layouts/Footer'
+import AddContact from './components/contacts/AddContacts'
 
 import { Provider } from './context'
 const App = () => {
@@ -16,9 +16,13 @@ const App = () => {
         <Header branding="React Video Tutorial" />
         <br />
         <div className="container">
+          <AddContact />
+          <br />
+          <br />
           <Contacts />
 
         </div>
+
         <Footer />
       </div>
     </Provider>
