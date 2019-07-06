@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Consumer } from './../../context'
+import Textinput from './../layouts/Textinput'
 import uuid from 'uuid';
 class AddContacts extends Component {
     state = {
@@ -51,29 +52,41 @@ class AddContacts extends Component {
                                             </div>
                                         </div>
                                         <form className="form-group" onSubmit={this.onSubmit.bind(this, dispatch)}>
-                                            <div className="row align-items-center">
-                                                <div className="col mt-4">
-                                                    <input type="text" className="form-control" placeholder="Enter Name.." name="name" value={name} onChange={this.onChange} />
-                                                </div>
-                                            </div>
-                                            <div className="row align-items-center mt-4">
-                                                <div className="col">
-                                                    <input type="email" className="form-control" placeholder="Enter Email.." name="email" value={email} onChange={this.onChange} />
-                                                </div>
-                                            </div>
+
+
+                                            <Textinput
+                                                name='name'
+                                                placeholder='Enter Name..'
+                                                value={name}
+                                                onChange={this.onChange}
+                                            />
+                                            <Textinput
+                                                name='email'
+                                                placeholder='Enter Email..'
+                                                value={email}
+                                                type="email"
+                                                onChange={this.onChange}
+                                            />
+                                            <Textinput
+                                                name='phone'
+                                                placeholder='Enter Phone..'
+                                                value={phone}
+                                                onChange={this.onChange}
+                                            />
+                                            {/* 
                                             <div className="row align-items-center mt-4">
                                                 <div className="col">
                                                     <input type="text" className="form-control" placeholder="Enter Phone" name="phone" value={phone} onChange={this.onChange} />
                                                 </div>
-                                            </div>
+                                            </div> */}
                                             {/* <div className="row align-items-center mt-4">
-                <div className="col">
-                <input type="password" className="form-control" placeholder="Password" />
-                </div>
-                <div className="col">
-                <input type="password" className="form-control" placeholder="Confirm Password" />
-                </div>
-                </div> */}
+<div className="col">
+<input type="password" className="form-control" placeholder="Password" />
+</div>
+<div className="col">
+<input type="password" className="form-control" placeholder="Confirm Password" />
+</div>
+</div> */}
                                             <div className="row justify-content-start mt-2">
                                                 <div className="col">
 
