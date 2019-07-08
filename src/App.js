@@ -8,8 +8,9 @@ import Header from './components/layouts/Header'
 import About from './components/pages/About'
 import Footer from './components/layouts/Footer'
 import AddContact from './components/contacts/AddContacts'
-
+import NotFound from './components/pages/NotFound'
 import { Provider } from './context'
+
 const App = () => {
   return (
 
@@ -23,6 +24,7 @@ const App = () => {
               <Route exact path='/' component={Contacts} />
               <Route exact path='/about' component={About} />
               <Route exact path='/contact/add' component={AddContact} />
+              <Route component={NotFound} />
             </Switch>
 
           </div>
