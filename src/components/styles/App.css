@@ -9,9 +9,13 @@ margin:32px 0 100px 0
 
 
 .main-div{
-   
-    margin-bottom: 50px;
+
+margin-bottom: 50px;
 }
 
 
 /* About Page */
+.aboutpage{
+    /* border: 2px solid rebeccapurple; */
+margin:100px 0 200px 0
+}
