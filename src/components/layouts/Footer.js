@@ -3,7 +3,7 @@ const Footer = () => {
 
     return (
         <div>
-            <footer className="footer">
+            {/* <footer className="footer">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-5">
@@ -53,7 +53,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
         </div>
     );
 

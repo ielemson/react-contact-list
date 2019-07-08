@@ -2,6 +2,7 @@
 .footer {
 
   bottom: 0;
+  top:550px;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 250px;

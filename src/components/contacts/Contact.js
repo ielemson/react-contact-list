@@ -11,6 +11,7 @@ class Contact extends Component {
         const { showcontactInfo } = this.state
         return (
             <Consumer>
+
                 {value => {
                     const { dispatch } = value;
                     return (
