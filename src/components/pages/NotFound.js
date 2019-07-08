@@ -3,7 +3,7 @@ import './../styles/notfound.css'
 const NotFound = () => {
 
     return (
-        <div className="align mb-5">
+        <div className="align page404">
             <div class="grid mt-8">
 
                 <div class="grid__row">
